@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "backstage-ecr-repo"
+  annotations:
+    github.com/project-slug: hirveakshata/aws-ecr-workflow #name of the terraform repo
+    backstage.io/techdocs-ref: dir:.
+  title: "backstage-ecr-repo"
+  description: "ECR Repo for backstage app"
+  tags: ["aws-ecr"]
+spec:
+  type: Infrastructure service
+  owner: user:guest
+  lifecycle: "Production"
